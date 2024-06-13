@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+        }
+
+        div.type {
+            width: 200px;
+            display: inline-flex;
+        }
+        div.blank {
+            width: 200px;
+            display: inline-flex;
+        }
+
+        div.output {
+            width: 75px;
+            display: inline-flex;
+        }
+    </style>
 </head>
 <body>
     <h1>Target: 250,000</h1>
     <div>
-        <span>Organic Search</span>
-        <input type="range" id="slider1" min="46644" max="69988" value="63364.55284">
-        <span id="output1"></span>
+        <div style="font-weight: bold;" class="type">Variable</div>
+        <div style="font-weight: bold;" class="blank">Slider</div>
+        <div style="font-weight: bold;" class="output">Value</div>
     </div>
     <div>
-        <span>Property_Conversion</span>
-        <input type="range" id="slider2" min="0.38" max=".6" step = ".001" value="0.537787686">
-        <span id="output2"></span>
+        <div class="type">Organic Search</div>
+        <input type="range" id="slider1" min="50000" max="75000" value="63364.55284">
+        <div class="output" id="output1"></div>
     </div>
     <div>
-        <span>Room_Conversion</span>
-        <input type="range" id="slider3" min="0.28" max="0.43" step = ".001" value="0.380608487">
-        <span id="output3"></span>
+        <div class="type">Property_Conversion</div>
+        <input type="range" id="slider2" min="0.42" max=".65" step = ".001" value="0.537787686">
+        <div class="output" id="output2"></div>
     </div>
     <div>
-        <span>Booking Clicked_Conversion</span>
-        <input type="range" id="slider4" min="0.14" max=".23" step = ".001" value="0.200359373">
-        <span id="output4"></span>
+        <div class="type">Room_Conversion</div>
+        <input type="range" id="slider3" min="0.31" max="0.45" step = ".001" value="0.380608487">
+        <div class="output" id="output3"></div>
     </div>
     <div>
-        <span>Payment Initiated_Conversion</span>
-        <input type="range" id="slider5" min="0.55" max=".83" step = ".001" value="0.750172673">
-        <span id="output5"></span>
+        <div class="type">Booking Clicked_Conversion</div>
+        <input type="range" id="slider4" min="0.16" max=".24" step = ".001" value="0.200359373">
+        <div class="output" id="output4"></div>
     </div>
     <div>
-        <span>Purchase_Conversion</span>
-        <input type="range" id="slider6" min=".62" max=".94" step = ".001" value="0.849294319">
-        <span id="output6"></span>
+        <div class="type">Payment Initiated_Conversion</div>
+        <input type="range" id="slider5" min="0.60" max=".90" step = ".001" value="0.750172673">
+        <div class="output" id="output5"></div>
+    </div>
+    <div>
+        <div class="type">Purchase_Conversion</div>
+        <input type="range" id="slider6" min=".68" max=".97" step = ".001" value="0.849294319">
+        <div class="output" id="output6"></div>
     </div>
     <div>
 
