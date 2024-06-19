@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            text-align: center;
+        }
         input {
             width: 200px;
         }
@@ -14,6 +17,7 @@
             width: 200px;
             display: inline-flex;
         }
+
         div.blank {
             width: 200px;
             display: inline-flex;
@@ -23,10 +27,19 @@
             width: 75px;
             display: inline-flex;
         }
+        table{
+            margin: auto;
+        }
+        td {
+            padding-right: 20px;
+            text-align: right;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Target Simulation </h1>
+    <br>
     <div>
         <div style="font-weight: bold;" class="type">Variable</div>
         <div style="font-weight: bold;" class="blank">Slider</div>
@@ -72,8 +85,28 @@
     <div>
 
     </div>
-    <h2 style="color:brown;">Target: $250,000</h2>
-    <h2 style="color: darkblue;" id="product"></h2>
+    <br>
+    <br>
+    <br>
+
+        <table>
+            <tr>
+                <td>
+                    <span style="color:dodgerblue; font-size:x-large; font-weight: bold;">Target:</span>
+            </td>
+            <td>
+                <span style="color: black; font-size:x-large; font-weight: bold;"">$250,000</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="color:dodgerblue; font-size:x-large; font-weight: bolder;">Expected to Acheive: </span>
+            </td>
+            <td>
+                <span style="color:black; font-size:x-large; font-weight: bolder;" id="product"></span>
+            </td>
+        </tr>
+    </table>
 
 
     <script src="simulation.js"></script>

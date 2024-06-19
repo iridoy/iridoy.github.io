@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
             value = parseFloat(((1 + parseFloat(sliders[i].value) / 100) * current_val[i]));
             product *= value;
         }
-        productElement.innerHTML = "Expected to Achieve: " + product.toLocaleString("en-US", {style:"currency", currency:"USD", maximumFractionDigits: 0});
+        productElement.innerHTML = "" + product.toLocaleString("en-US", {style:"currency", currency:"USD", maximumFractionDigits: 0});
+        if (product > 250000) {
+            productElement.style.color = 'green'            
+        } else {
+            productElement.style.color = 'brown'            
+            
+        }
+
     }
 
 
